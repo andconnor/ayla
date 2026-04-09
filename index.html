@@ -649,19 +649,19 @@ footer p{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var
       <h2 class="contact-title">Let's<br><em>talk,</em><br>shall we?</h2>
       <p class="contact-sub">Open to new roles and creative projects. I reply fast – usually within a day.</p>
       <div class="cta-row">
-        <a href="/cdn-cgi/l/email-protection#19786075786a7a7874747c75752b29292a59707a75766c7d377a7674" class="cta-btn primary">Email me →</a>
+        <a href="mailto:aylascammell2003@icloud.com" class="cta-btn primary">Email me →</a>
       </div>
     </div>
     <div class="contact-grid" style="grid-template-columns:1fr">
       <div class="contact-card" style="border-right:none">
         <div class="cc-label">Email</div>
-        <div class="cc-value"><a href="/cdn-cgi/l/email-protection#ec8d95808d9f8f8d8181898080dedcdcdfac858f80839988c28f8381"><span class="__cf_email__" data-cfemail="d3b2aabfb2a0b0b2bebeb6bfbfe1e3e3e093bab0bfbca6b7fdb0bcbe">[email&#160;protected]</span></a></div>
+        <div class="cc-value"><a href="mailto:aylascammell2003@icloud.com">aylascammell2003@icloud.com</a></div>
         <div class="cc-sub">Best way to reach me</div>
       </div>
     </div>
   </div>
   <footer><p>© 2026 Ayla Scammell</p><p>Social Media Manager &a
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 
 function showPage(name){
   document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('active'); });
@@ -694,4 +694,15 @@ document.querySelectorAll('.car-card').forEach(function(card){
     clearInterval(timer);
     if(!clicked){ idx = 0; showSlide(0); }
   });
-  card.addEventListener('click', function(
+  card.addEventListener('click', function(){
+    clicked = !clicked;
+    clearInterval(timer);
+    if(clicked){ statsOverlay.classList.add('visible'); }
+    else { statsOverlay.classList.remove('visible'); idx = 0; showSlide(0); }
+  });
+});
+
+document.querySelectorAll('video').forEach(function(v){ v.play().catch(function(){}); });
+
+</script>
+</body>
